@@ -1,0 +1,76 @@
+@import "../../sass/variables.scss";
+
+.image-content {
+  display: block;
+  padding: 50px 0 0 0;
+
+  &.header .image-content-inner {
+    flex-direction: column-reverse;
+
+    .image-content-content {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media all and (min-width: $tablet) {
+    padding: 150px 0 0 0;
+
+    &.header .image-content-inner {
+      flex-direction: row;
+    }
+
+    &.reversed {
+      text-align: right;
+
+      .image-content-inner {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}
+
+.image-content-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  .image-content-content {
+    flex: 0 0 100%;
+    margin-top: 30px;
+
+    h1 {
+      margin: 0;
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 32px;
+      line-height: 1.2em;
+    }
+  }
+
+  .image-content-image {
+    width: 100%;
+    height: 300px;
+    display: block;
+    background: rgba($black, 0.2);
+  }
+
+  @media all and (min-width: $tablet) {
+    .image-content-content {
+      margin-top: 0 !important;
+      flex: 0 0 calc(45% - 30px);
+      margin-bottom: 0 !important;
+    }
+
+    .image-content-image {
+      width: auto;
+      height: 500px;
+      flex: 0 0 calc(55% - 30px);
+    }
+  }
+}

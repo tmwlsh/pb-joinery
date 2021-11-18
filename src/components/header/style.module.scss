@@ -1,0 +1,40 @@
+@import "../../sass/variables.scss";
+
+.header {
+  padding: 30px 0;
+  background: $purple;
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      color: $white;
+      font-size: 24px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+
+      li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        a {
+          color: $white;
+          padding: 10px;
+          display: block;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
