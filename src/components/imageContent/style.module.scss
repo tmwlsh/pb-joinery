@@ -51,6 +51,18 @@
       font-size: 32px;
       line-height: 1.2em;
     }
+
+    a {
+      color: $white;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 15px 30px;
+      border-radius: 3px;
+      box-sizing: border-box;
+      text-decoration: none;
+      display: inline-block;
+      background-color: $purple;
+    }
   }
 
   .image-content-image {
