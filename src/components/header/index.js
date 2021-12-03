@@ -11,7 +11,7 @@ const Header = () => {
         <nav>
           <Link className={styles.logo} to="/">PB Joinery</Link>
           <ul>
-            <li><Link to="/">Services</Link></li>
+            <li><Link to="/services">Services</Link></li>
             <li><Link to="/">Gallery</Link></li>
             <li><Link to="/">Contact</Link></li>
           </ul>

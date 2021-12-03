@@ -1,3 +1,62 @@
+@import "../../sass/variables.scss";
+
 .footer {
-  background: blue;
+  padding: 50px 0;
+  background: rgb(67, 65, 68);
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  p {
+    margin: 0;
+    color: rgba($white, 0.7);
+  }
+}
+
+.footer-left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .footer-col {
+    margin-right: 100px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 20px;
+    color: rgba($white, 0.5);
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 3px 0 10px 0;
+    color: rgba($white, 0.7);
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+      a {
+        text-decoration: none;
+        color: rgba($white, 0.5);
+      }
+    }
+  }
 }
