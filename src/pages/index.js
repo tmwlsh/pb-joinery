@@ -21,7 +21,7 @@ const IndexPage = () => {
     mainCopy: "We specialise in Kitchens, Bathrooms, Doors & Maintenance. Our expert team make sure that every job is finished in a perfect manner, and our reviews speak for themselves.",
     link: {
       text: "Read More",
-      url: "/"
+      url: "/services/bathroom-fitting"
     }
   }
 
@@ -32,7 +32,7 @@ const IndexPage = () => {
     mainCopy: "We specialise in Kitchens, Bathrooms, Doors & Maintenance. Our expert team make sure that every job is finished in a perfect manner, and our reviews speak for themselves.",
     link: {
       text: "Read More",
-      url: "/"
+      url: "/services/kitchen-fitting"
     }
   }
 
@@ -43,7 +43,7 @@ const IndexPage = () => {
     mainCopy: "We specialise in Kitchens, Bathrooms, Doors & Maintenance. Our expert team make sure that every job is finished in a perfect manner, and our reviews speak for themselves.",
     link: {
       text: "Read More",
-      url: "/"
+      url: "/services/door-specialists"
     }
   }
 
@@ -52,7 +52,7 @@ const IndexPage = () => {
     text: "Get in touch today to recieve a free, no obligation quote & to discuss your project in depth with one of our industry professionals.",
     link: {
       text: "Get in touch",
-      url: "/"
+      url: "/contact"
     }
   }
 
