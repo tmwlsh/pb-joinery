@@ -3,6 +3,9 @@ import Layout from "../components/layout";
 import ImageContent from "../components/imageContent";
 import CtaRow from "../components/ctaRow";
 
+import KitchenImg from "../images/kitchen-1.jpg";
+import Door from "../images/door-1.jpg";
+
 const ServicePage = () => {
 
   const service1Content = {
@@ -12,7 +15,7 @@ const ServicePage = () => {
     mainCopy: "We specialise in Kitchens, Bathrooms, Doors & Maintenance. Our expert team make sure that every job is finished in a perfect manner, and our reviews speak for themselves.",
     link: {
       text: "Read More",
-      url: "/"
+      url: "/services/bathroom-fitting"
     }
   }
 
@@ -20,10 +23,12 @@ const ServicePage = () => {
     mainHeader: "Kitchen Fitting",
     header: false,
     layout: "regular",
+    img: KitchenImg,
+    imgAlt: "Kitchen",
     mainCopy: "We specialise in Kitchens, Bathrooms, Doors & Maintenance. Our expert team make sure that every job is finished in a perfect manner, and our reviews speak for themselves.",
     link: {
       text: "Read More",
-      url: "/"
+      url: "/services/kitchen-fitting"
     }
   }
 
@@ -31,10 +36,12 @@ const ServicePage = () => {
     mainHeader: "Door Specialists",
     header: false,
     layout: "reversed",
+    img: Door,
+    imgAlt: "Door",
     mainCopy: "We specialise in Kitchens, Bathrooms, Doors & Maintenance. Our expert team make sure that every job is finished in a perfect manner, and our reviews speak for themselves.",
     link: {
       text: "Read More",
-      url: "/"
+      url: "/services/door-specialists"
     }
   }
 
@@ -43,7 +50,7 @@ const ServicePage = () => {
     text: "Get in touch today to recieve a free, no obligation quote & to discuss your project in depth with one of our industry professionals.",
     link: {
       text: "Get in touch",
-      url: "/"
+      url: "/contact"
     }
   }
 

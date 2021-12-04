@@ -10,7 +10,11 @@ const ImageContent = ({content}) => {
     <div className={imageContentClasses.join(" ")}>
       <Container>
         <div className={styles.imageContentInner}>
-          <div className={styles.imageContentImage}></div>
+          <div className={styles.imageContentImage}>
+            {content.img && (
+              <img src={content.img} alt={content.imgAlt} />
+            )}
+          </div>
           <div className={styles.imageContentContent}>
             {content.smallHeader && (
               <h1>{content.smallHeader}</h1>

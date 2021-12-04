@@ -12,8 +12,8 @@ const Header = () => {
           <Link className={styles.logo} to="/">PB Joinery</Link>
           <ul>
             <li><Link to="/services">Services</Link></li>
-            <li><Link to="/">Gallery</Link></li>
-            <li><Link to="/">Contact</Link></li>
+            <li><Link to="/gallery">Gallery</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
       </Container>

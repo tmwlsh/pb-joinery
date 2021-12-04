@@ -1,0 +1,176 @@
+@import "../../sass/variables.scss";
+
+.contact-row {
+  display: block;
+  padding: 50px 0 0 0;
+
+  &.header .contact-row-inner {
+    flex-direction: column-reverse;
+
+    .contact-row-content {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media all and (min-width: $tablet) {
+    padding: 150px 0 0 0;
+
+    &.header .contact-row-inner {
+      flex-direction: row;
+    }
+
+    &.reversed {
+      text-align: right;
+
+      .contact-row-inner {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}
+
+.contact-row-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  .contact-row-content {
+    flex: 0 0 100%;
+    margin-top: 30px;
+
+    h1 {
+      margin: 0;
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin: 0 0 20px 0;
+      line-height: 1.2em;
+    }
+
+    p {
+      margin: 5px 0 0 0;
+    }
+
+    a {
+      color: $purple;
+      font-size: 18px;
+      display: inline;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+
+  .contact-row-image {
+    width: 100%;
+    height: 300px;
+    display: block;
+    background: rgba($purple, 0.2);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+    }
+  }
+
+  @media all and (min-width: $tablet) {
+    .contact-row-content {
+      margin-top: 0 !important;
+      flex: 0 0 calc(45% - 30px);
+      margin-bottom: 0 !important;
+    }
+
+    .contact-row-image {
+      width: auto;
+      height: 500px;
+      flex: 0 0 calc(55% - 30px);
+    }
+  }
+}
+
+.contact-form {
+  margin: 50px 0;
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      color: $purple;
+      font-size: 12px;
+      font-weight: 700;
+      margin: 0 0 5px 0;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      outline: none;
+      padding: 15px;
+      display: block;
+      font-size: 18px;
+      appearance: none;
+      font-family: $mplus;
+      box-sizing: border-box;
+      border: 1px solid $purple;
+
+      &[type="submit"] {
+        width: auto;
+        color: $white;
+        margin: 0 0 0 auto;
+        padding: 15px 30px;
+        background-color: $purple;
+
+        &:focus {
+          color: $purple;
+        }
+      }
+
+      &:focus {
+        background-color: rgba($purple, 0.2);
+      }
+    }
+
+    textarea {
+      height: 300px;
+    }
+
+    .form-field {
+      flex: 0 0 100%;
+      position: relative;
+      margin-bottom: 20px;
+
+      svg {
+        right: 20px;
+        height: 15px;
+        bottom: 21px;
+        z-index: 100;
+        position: absolute;
+        pointer-events: none;
+      }
+    }
+  }
+
+  @media all and (min-width: $tablet) {
+    margin: 100px 0 150px 0;
+
+    form {
+      .form-field {
+        flex: 0 0 calc(50% - 10px);
+
+        &.full {
+          flex: 0 0 100%;
+        }
+      }
+    }
+  }
+}

@@ -4,12 +4,19 @@ import ImageContent from "../components/imageContent";
 import IconRow from "../components/iconRow";
 import CtaRow from "../components/ctaRow";
 
+import KitchenImg from "../images/kitchen-1.jpg";
+import KitchenImg2 from "../images/kitchen-2.jpg";
+import Door from "../images/door-1.jpg";
+
 const IndexPage = () => {
+
 
   const homeHeaderContent = {
     smallHeader: "PB Joinery",
     header: true,
     layout: "regular",
+    img: KitchenImg2,
+    imgAlt: "PB Joinery - Bathroom, Kitchen & Door specialists.",
     mainHeader: "Quality joinery and craftmanship",
     mainCopy: "We specialise in Kitchens, Bathrooms, Doors & Maintenance. Our expert team make sure that every job is finished in a perfect manner, and our reviews speak for themselves."
   }
@@ -29,6 +36,8 @@ const IndexPage = () => {
     mainHeader: "Kitchen Fitting",
     header: false,
     layout: "regular",
+    img: KitchenImg,
+    imgAlt: "Kitchen Img 1",
     mainCopy: "We specialise in Kitchens, Bathrooms, Doors & Maintenance. Our expert team make sure that every job is finished in a perfect manner, and our reviews speak for themselves.",
     link: {
       text: "Read More",
@@ -40,6 +49,8 @@ const IndexPage = () => {
     mainHeader: "Door Specialists",
     header: false,
     layout: "reversed",
+    img: Door,
+    imgAlt: "Door Specialists",
     mainCopy: "We specialise in Kitchens, Bathrooms, Doors & Maintenance. Our expert team make sure that every job is finished in a perfect manner, and our reviews speak for themselves.",
     link: {
       text: "Read More",
