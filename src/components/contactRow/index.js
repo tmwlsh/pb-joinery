@@ -33,15 +33,15 @@ const ContactRow = ({content}) => {
             <input type="hidden" name="form-name" value="contact" />
             <div className={styles.formField}>
               <p>First Name</p>
-              <input type="text" placeholder="First Name" />
+              <input name="First Name" type="text" placeholder="First Name" />
             </div>
             <div className={styles.formField}>
               <p>Last Name</p>
-              <input type="text" placeholder="Last Name" />
+              <input name="Last Name" type="text" placeholder="Last Name" />
             </div>
             <div className={styles.formField}>
               <p>Enquiry Type</p>
-              <select>
+              <select name="Enquiry Type">
                 <option selected>General Enquiry</option>
                 <option>Kitchen Fitting</option>
                 <option>Bathroom Fitting</option>
@@ -51,11 +51,11 @@ const ContactRow = ({content}) => {
             </div>
             <div className={styles.formField}>
               <p>Subject</p>
-              <input type="text" placeholder="Subject" />
+              <input name="Subject" type="text" placeholder="Subject" />
             </div>
             <div className={[styles.formField, styles['full']].join(" ")}>
               <p>Enquiry</p>
-              <textarea placeholder="Enquiry" />
+              <textarea name="Enquiry" placeholder="Enquiry" />
             </div>
             <div className={[styles.formField, styles['full']].join(" ")}>
               <input type="submit" value="Submit Enquiry" />
