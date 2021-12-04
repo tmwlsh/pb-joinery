@@ -28,7 +28,7 @@ const ContactRow = ({content}) => {
       </div>
       <div className={styles.contactForm}>
         <Container size="medium">
-          <form method="/pages/success" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+          <form method="/thank-you" netlify-honeypot="bot-field" data-netlify="true" name="contact">
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact" />
             <div className={styles.formField}>
